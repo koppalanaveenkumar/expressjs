@@ -1,0 +1,19 @@
+Middleware :
+a middleware is a function that acts like an interceptor which is used preprocess (continue down)
+some request and make a decission whether to serve the actual resource or not.
+// Function that can be used to execute before producing the actual api resource.
+
+A middleware function will have 3 params REQ, RES, NEXT;
+example: var logger = (req, res, next) =>{ // code }
+
+5 types of middlewares
+1. Application level middleware: Applied at application level where all the api calls will go this.
+Applied to all the api's available through
+
+2. Routes middleware : Used to apply middlewares at route level.
+
+3. Error-handling middleware: Error handling Middleware: used to handle unexpected errors
+
+4. Built middleware : express.json();
+
+5. third-party middleware: use third party middleware to add functionality to express app.
